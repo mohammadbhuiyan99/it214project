@@ -14,6 +14,7 @@ poem p = new poem();
 </table>
 <table><tr><td>This is a poem generator</td></tr></table>
 <table><tr><td> Here is your 14 line poem: <%=printVerse %></td>
+    <button type="button" onclick=printVerse> Would you like another? </td>
 </table>
 </body>
 </html>
