@@ -22,19 +22,19 @@ public class poem {
 	
 	static Random rand = new Random();
 	
-	/* parameters: a list of words 'list' is given
-	   action: return a random word from the list of words
+	/* parameters a list of words 'list' is given
+	   returns a random word from the list of words
 	*/
 	static String word(String [] list) {
 		
-		//s is a random number in the range 0 to n-1
+		//s is a random number in the range is from 0 to n-1
 		int s = rand.nextInt(list.length);
 		
 	  //print the s-th word from the list of words
 		 return list[s] + " ";
 	}
 	
-	//action: return a random verb from verblist
+	//returns a random verb from hapylist
 		static String happy() {
 				return word(happylist);
 		}
@@ -59,28 +59,12 @@ public class poem {
 	}
 		
 		static void printVerse() {
-			/*System.out.println("Enter your mood:");
-				  Scanner s1=new Scanner(System.in);
-				  String mood=s1.next();
-
-				  if ( mood == "happy" ){
-				    System.out.println( happy());
-				  }
-
-				  else{
-				    System.out.println(sad());
-				  }
-				}
-			
-			// formula for a verse is 
-			// verse ==> 'The' adjective noun verb adjective object*/
 			System.out.println(happy() + "\n" + sad() + "\n" + angry() + "\n" +nervous() + "\n" +excited() + "\n" +infatuated() + "\n" +content());
 		}
-		//action: generate a stanza
+		//generate a stanza
 		static void  stanza() {
 			int i=0; 
-			
-			// stanza of 4 verses
+		
 			while (i<2) {
 				printVerse();
 				i++;
@@ -90,10 +74,8 @@ public class poem {
 		
 
 		public static void main (String args[]) {
-					
-			//generate one stanza
+
 			stanza();		
 		}
 
 }
-
