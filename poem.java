@@ -88,6 +88,8 @@ public class poem {
 			System.out.println();
 		}
 		
+		public poem(){
+		}
 
 		public static void main (String args[]) {
 					
