@@ -1,7 +1,7 @@
 package helloworld;
 import java.util.*;
 
-public class poem {
+public class Poem {
 
 	static String [] happylist = {"I woke up with a smile upon my face", "The morning has begun and I am awake", 
 			                      "You were always there at my side", "Even when I was alone, and I cried,", "A single day is never long enough", 
@@ -58,7 +58,7 @@ public class poem {
 			return word(contentlist);
 	}
 		
-		static void printVerse() {
+		static void printPoem() {
 			System.out.println(happy() + "\n" + sad() + "\n" + angry() + "\n" +nervous() + "\n" +excited() + "\n" +infatuated() + "\n" +content());
 		}
 		//generate a stanza
@@ -66,7 +66,7 @@ public class poem {
 			int i=0; 
 		
 			while (i<2) {
-				printVerse();
+				printPoem();
 				i++;
 			}
 			System.out.println();
