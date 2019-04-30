@@ -59,7 +59,7 @@ public class poem {
 	}
 		
 		static void printVerse() {
-			System.out.println("Enter your mood:");
+			/*System.out.println("Enter your mood:");
 				  Scanner s1=new Scanner(System.in);
 				  String mood=s1.next();
 
@@ -73,15 +73,15 @@ public class poem {
 				}
 			
 			// formula for a verse is 
-			// verse ==> 'The' adjective noun verb adjective object
-			//System.out.println(sad());
-		//}
+			// verse ==> 'The' adjective noun verb adjective object*/
+			System.out.println(happy() + "\n" + sad() + "\n" + angry() + "\n" +nervous() + "\n" +excited() + "\n" +infatuated() + "\n" +content());
+		}
 		//action: generate a stanza
 		static void  stanza() {
 			int i=0; 
 			
 			// stanza of 4 verses
-			while (i<4) {
+			while (i<2) {
 				printVerse();
 				i++;
 			}
@@ -96,3 +96,4 @@ public class poem {
 		}
 
 }
+
